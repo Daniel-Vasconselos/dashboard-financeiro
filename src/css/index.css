@@ -127,7 +127,7 @@ input, select{
 .div_tabela{
     width: 600px;
     height: 450px;
-    padding: 30px;
+    padding: 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.485);
     border-radius: 10px;
     overflow-x: auto;
