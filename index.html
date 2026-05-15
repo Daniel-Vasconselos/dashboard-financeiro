@@ -10,35 +10,42 @@
 </head>
 <body>
     <main>
-        
-        <div class="div_filtro">
-            <div class="ano">
-                <label>Ano:</label>
-                <input type="number" name="ano" id="ano" min="1900" max="2100" >
+        <nav class="navbar">
+            <h1 class="logo">Painel Financeiro</h1>
+
+            <div class="dropdown_filtro" id="dropdown_filtro">
+                <button class="btn_dropdown" id="btn_dropdown">Filtrar</button>
+
+                <div class="dropdown_conteudo" id="dropdown_conteudo">
+                    <div class="campo">
+                        <label>Ano:</label>
+                        <input type="number" name="ano" id="ano" min="1900" max="2100" >
+                    </div>
+                    
+                    <div class="campo">
+                        <label>Mes:</label>
+                        <select name="mes" id="mes">
+                            <option value="--" disabled selected hidden>Selecione</option>
+                            <option value="">Todos</option>
+                            <option value="Janeiro">Janeiro</option>
+                            <option value="Fevereiro">Fevereiro</option>
+                            <option value="Marco">Março</option>
+                            <option value="Abril">Abril</option>
+                            <option value="Maio">Maio</option>
+                            <option value="Junho">Junho</option>
+                            <option value="Julho">Julho</option>
+                            <option value="Agosto">Agosto</option>
+                            <option value="Setembro">Setembro</option>
+                            <option value="Outubro">Outubro</option>
+                            <option value="Novembro">Novembro</option>
+                            <option value="Dezembro">Dezembro</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <button class="btn_filtro" id="btn_filtro">Filtrar</button>
+                </div>
             </div>
-            
-            <div class="mes">
-                <label>Mes:</label>
-                <select name="mes" id="mes">
-                    <option value="--" disabled selected hidden>Selecione um mes</option>
-                    <option value="">Todos os mesês</option>
-                    <option value="Janeiro">Janeiro</option>
-                    <option value="Fevereiro">Fevereiro</option>
-                    <option value="Marco">Março</option>
-                    <option value="Abril">Abril</option>
-                    <option value="Maio">Maio</option>
-                    <option value="Junho">Junho</option>
-                    <option value="Julho">Julho</option>
-                    <option value="Agosto">Agosto</option>
-                    <option value="Setembro">Setembro</option>
-                    <option value="Outubro">Outubro</option>
-                    <option value="Novembro">Novembro</option>
-                    <option value="Dezembro">Dezembro</option>
-                </select>
-            </div>
-        
-            <button id="btn_filtro">Filtrar</button>
-        </div>
+        </nav>
 
         <div class="div_dados">
             <div class="valor">
@@ -74,6 +81,8 @@
                 </select>
             </div>
             <button id="btn_incluir">Incluir</button>
+
+            
         </div>
 
         
@@ -82,8 +91,7 @@
             <div class="div_tabela">
                 <table>
                     <thead>
-                        <th class="coluna_ano">Mês</th>
-                        <th class="coluna_mes">Ano</th>
+                        <th class="coluna_data">Data</th>
                         <th class="coluna_valor">Valor</th>
                         <th class="coluna_tipo">Tipo</th>
                         <th class="coluna_descricao">Descrição</th>
