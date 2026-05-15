@@ -125,18 +125,20 @@ input, select{
 }
 
 .div_tabela{
-    width: 600px;
-    height: 450px;
+    width: 100%;
+    max-width: 900px;
+    overflow-x: auto;
     padding: 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.485);
     border-radius: 10px;
-    overflow-x: auto;
+    margin: auto;
+    
 }
 
 table{
     width: 100%;
+    min-width: 600px;
     border-collapse: collapse;
-    table-layout: fixed;
 }
 
 th{
@@ -144,6 +146,7 @@ th{
     border-bottom: inset;
     padding-bottom: 5px;
 }
+
 
 .btn_excluir{
     font-size: 25px;
@@ -200,7 +203,6 @@ th{
     padding-top: 20px;
     justify-content: center;
     align-items: center;
-    gap: 50px;
 }
 
 .grafico_circular{
@@ -326,6 +328,27 @@ th{
 
     .dropdown_conteudo{
         width: 220px;
+    }
+
+    .div_dados{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .div_dados button{
+        width: 100%;
+        height: 40px;
+    }
+
+    .logo{
+        font-size: 18px;
+    }
+
+    th,
+    td{
+        font-size: 14px;
+        padding: 8px;
     }
 
 }
