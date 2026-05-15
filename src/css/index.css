@@ -126,13 +126,14 @@ input, select{
 
 .div_tabela{
     width: 100%;
-    max-width: 900px;
+    max-width: 700px;
+    max-height: 450px;
     overflow-x: auto;
+    overflow-y: auto;
     padding: 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.485);
     border-radius: 10px;
-    margin: auto;
-    
+
 }
 
 table{
@@ -200,9 +201,11 @@ th{
 .mini_dashboard{
     display: flex;
     width: 100%;
-    padding-top: 20px;
     justify-content: center;
     align-items: center;
+    margin: 30px auto;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
 .grafico_circular{
@@ -240,7 +243,9 @@ th{
 }
 
 .irformacoes{
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.485);
     border-radius: 10px;
@@ -300,19 +305,22 @@ th{
         height: auto;
     }
 
-    .div_tabela{
-        width: 100%;
-        max-width: 95%;
-        height: 400px;
+    .irformacoes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: 0 auto;
+        order: 1;
     }
 
-    .irformacoes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin: 0 auto;
+    .div_tabela{
+        width: 100%;
+        max-width: 90%;
+        height: 400px;
+        order: 2;
     }
+    
 
 }
 
@@ -347,8 +355,7 @@ th{
 
     th,
     td{
-        font-size: 14px;
+        font-size: 12px;
         padding: 8px;
     }
-
 }
