@@ -1,3 +1,4 @@
+
 const data_atual = new Date()
 const mes_atual_letra_minuscula = (data_atual.toLocaleDateString('pt-Br',{month:'long'}));
 const mes_atual = mes_atual_letra_minuscula.charAt(0).toUpperCase() + mes_atual_letra_minuscula.slice(1)
